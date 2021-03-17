@@ -193,13 +193,13 @@
               </Assign.Value>
             </Assign>
           </Sequence>
-          <uix:NApplicationCard sap2010:Annotation.AnnotationText="Browser activity to get data fro web and write into data table" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Yahoo Finance - Stock Market Live, Quotes, Business &amp; Finance News" sap:VirtualizedContainerService.HintSize="262.4,112.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[web_element]" OpenMode="IfNotOpen" Version="V1">
+          <uix:NApplicationCard sap2010:Annotation.AnnotationText="Browser activity to get data from web and write into data table" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Yahoo Finance - Stock Market Live, Quotes, Business &amp; Finance News" sap:VirtualizedContainerService.HintSize="262.4,112.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[web_element]" OpenMode="IfNotOpen" Version="V1">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence sap:VirtualizedContainerService.HintSize="595.2,2892" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence sap:VirtualizedContainerService.HintSize="595.2,2852" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -560,7 +560,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <TryCatch sap2010:Annotation.AnnotationText="Get Transactionitem from queue" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,322.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch sap2010:Annotation.AnnotationText="Get Transaction item from queue" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,322.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -606,12 +606,12 @@
               </If>
             </Sequence>
             <FlowStep.Next>
-              <FlowDecision x:Name="__ReferenceID2" Condition="[transitem is Nothing]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+              <FlowDecision x:Name="__ReferenceID2" Condition="[transitem is Nothing]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <av:Point x:Key="ShapeLocation">260.4,486.4</av:Point>
-                    <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
+                    <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
                     <av:PointCollection x:Key="TrueConnector">260.4,530 230.4,530 230.4,650 200,650</av:PointCollection>
                     <av:PointCollection x:Key="FalseConnector">339.6,530 369.6,530 369.6,650 400,650</av:PointCollection>
                   </scg:Dictionary>
@@ -745,7 +745,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch sap2010:Annotation.AnnotationText="Open Browser  and check for network connectivity&#xD;&#xA;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="483.2,716.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch sap2010:Annotation.AnnotationText="Open Browser and check for network connectivity&#xA;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="483.2,716.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -842,14 +842,14 @@
               </Catch>
             </TryCatch.Catches>
           </TryCatch>
-          <If sap2010:Annotation.AnnotationText="Check if any exception had occur " Condition="[Not TrueExecption]" sap:VirtualizedContainerService.HintSize="483.2,762.4" sap2010:WorkflowViewState.IdRef="If_4">
+          <If sap2010:Annotation.AnnotationText="Check if any exception had occur " Condition="[Not TrueExecption]" sap:VirtualizedContainerService.HintSize="483.2,428.8" sap2010:WorkflowViewState.IdRef="If_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <TryCatch sap2010:Annotation.AnnotationText="Get data fom Excel and add item into Queue" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,552" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+              <TryCatch sap2010:Annotation.AnnotationText="Get data fom Excel and add item into Queue" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -983,10 +983,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,356" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -1018,25 +1018,16 @@
           </If>
         </Sequence>
         <FlowStep.Next>
-          <FlowDecision x:Name="__ReferenceID4" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-            <FlowDecision.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="TrueExecption" />
-            </FlowDecision.Condition>
+          <FlowDecision x:Name="__ReferenceID4" Condition="[TrueExecption]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2" True="{x:Reference __ReferenceID1}" False="{x:Reference __ReferenceID3}">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <av:Point x:Key="ShapeLocation">120.4,266.4</av:Point>
-                <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
+                <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
                 <av:PointCollection x:Key="TrueConnector">120.4,310 100,310 100,615.6</av:PointCollection>
                 <av:PointCollection x:Key="FalseConnector">199.6,310 300,310 300,375.6</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <FlowDecision.True>
-              <x:Reference>__ReferenceID1</x:Reference>
-            </FlowDecision.True>
-            <FlowDecision.False>
-              <x:Reference>__ReferenceID3</x:Reference>
-            </FlowDecision.False>
           </FlowDecision>
         </FlowStep.Next>
       </FlowStep>
